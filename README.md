@@ -8,9 +8,9 @@ Remember the halcyon days of October 2021, where you just _had_ to get into cryp
 
 I haven't checked in since then, but I assume they're all millionaires almost two years on.
 
-As we all know, if everyone around you is getting into a get-rich-quick scheme and it sounds too-good-to-be-true, then you'd better get in right now, because they're going to be rich and on the moon 🚀 (?) and you're going to be left behind 🌎 like a dummy. But since you didn't get in then, let's analyze some coins right now - it's never too late to be a ~~rube~~ wealthy investor.
+As we all know, if everyone around you is getting into a get-rich-quick scheme and it sounds too-good-to-be-true, then you'd better get in right now, because they're going to be rich and on the moon 🚀 (?) and you're going to be left behind 🌎 like a dummy. But since you didn't get in then, let's analyze some coins right now - it's never too late to become a ~~rube~~ wealthy investor.
 
-The goal of this project was to use machine learning algorithms
+The goal of this project was to use machine learning algorithms to organize a list of 41 cryptocurrencies into clusters to see what insights we can glean. The list contains cryptocurrencies as well-known as Bitcoin and as well-respected as ftx-token.
 
 -----
 
