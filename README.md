@@ -14,6 +14,13 @@ The goal of this project was to use machine learning algorithms to organize a li
 
 -----
 
+## Table of Contents
+1. [<b>Data Preparation</b>](https://github.com/jonnybrammah/CryptoClustering/blob/main/README.md#data-preparation)
+2. [<b>Clustering the data using KMeans</b>](https://github.com/jonnybrammah/CryptoClustering/blob/main/README.md#clustering-the-data-using-KMeans)
+3. [<b>Principal Component Analysis</b>](https://github.com/jonnybrammah/CryptoClustering/blob/main/README.md#principal-component-analysis)
+
+-----
+
 ## Data Preparation
 
 The data contained in the [csv file](https://github.com/jonnybrammah/CryptoClustering/blob/main/Resources/crypto_market_data.csv) contained the information on the percentage price change over several timescales:
@@ -65,9 +72,6 @@ Plotting the data across two of the Principal Component Dimensions, and coloring
 
 ![PCA Scatter Plot](https://raw.githubusercontent.com/jonnybrammah/CryptoClustering/main/Output/market_data_pca_plot.png)
 
-From this data, we can see that the clusters share some similarities with the previous KMeans Modeling analysis. There are still two clusters within the main group of datapoints, and two clusters that each contain one individual cryptocurrency. However, in this scatter plot, we can clearly see that these two clusters (red and yellow) do indeed represent cryptocurrencies that have 
+From this data, we can see that the clusters share some similarities with the previous KMeans Modeling analysis. There are still two clusters within the main group of datapoints, and two clusters that each contain one individual cryptocurrency. However, in this scatter plot, we can clearly see that these two clusters (red and yellow) represent cryptocurrencies that are significantly different from the two main clusters and should reasonably be considered on their own, or at least not included in the analysis or treatment of the other clusters.
 
 
------
-
-## Analysis
