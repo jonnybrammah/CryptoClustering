@@ -47,7 +47,7 @@ We can then use the KMeans method to cluster the data into four clusters, and pl
 
 Two very distinct clusters stand out from this graph, blue and yellow. Looking at this in broad strokes, you can see that both clusters hover around zero percent price change in the previous 24 hours with roughly equal amounts either positive and negative, with the yellow cluster having had a positive price change in the previous week and the blue cluster having had a negative price change.
 
-Two other clusters exist, red and green, but each cluster only contains one data point.
+Two other clusters exist, red and green, but each cluster only contains one data point. The green datapoint represents a cryptocurrency with a significantly negative percentage price change in the last day. Visually, this makes some sense being in its own cluster since it is so visually separate from the others. However, the red datapoint visually seems to fit more closely with the blue cluster. This could be due to information contained in other columns, not represented on this graph, and further analysis would bre required to determine if this is the case.
 
 
 
