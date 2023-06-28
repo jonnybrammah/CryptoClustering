@@ -55,10 +55,17 @@ Two other clusters exist, red and green, but each cluster only contains one data
 
 In order to optimize these clusters further, we used Principal Component Analysis (PCA) to reduce the dimensionality of the dataset, while containing as much of its information as possible. In this case, we reduced the dimensionality to three components, which still kept around 89.5% of the total variability in the original data.
 
-Repeating the same process as above to use KMeans modeling to cluster the data.
+Repeating the same process as above to use KMeans modeling to cluster the data, we can check the appropriate number of clusters using the elbow curve method:
 
 ![Elbow Curve PCA](https://raw.githubusercontent.com/jonnybrammah/CryptoClustering/main/Output/elbow_curve_pca.png)
 
+and see it is that four seems optimal again in this case.
+
+Plotting the data across two of the Principal Component Dimensions, and coloring according to cluster, results in the following plot:
+
+![PCA Scatter Plot](https://raw.githubusercontent.com/jonnybrammah/CryptoClustering/main/Output/market_data_pca_plot.png)
+
+From this data, we can see that the clusters share some similarities with the previous KMeans Modeling analysis. There are still two clusters within the main group of datapoints, and two clusters that each contain one individual cryptocurrency. However, in this scatter plot, we can clearly see that these two clusters (red and yellow) do indeed represent cryptocurrencies that have 
 
 
 -----
