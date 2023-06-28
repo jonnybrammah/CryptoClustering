@@ -33,7 +33,23 @@ Once this has been done, let's cluster! ✨
 
 ## Clustering the data using KMeans
 
-Our first step here is to find what is an appropriate number of clusters to fit to. For this, an elbow curve plot was created with the number of possible clusters on the x axis and the inertia on the y axis. The inertia represents how easily a datapoint can be added to an existing cluster, with a high inertia meaning it is more 'difficult' to reasonably add the datapoint to a cluster. With this in mind, we want the inertia to be relatively low so the clusters do identify the differences between datapoints. However, there is a point at which too many clusters will not adequately represent the datasince it will be visually hard to parse. To find the balance between these two factors, we plot the elbow-curve at select the cluster nium
+Our first step here is to find what is an appropriate number of clusters to fit to. For this, an elbow curve plot was created with the number of possible clusters on the x axis and the inertia on the y axis. The inertia represents how easily a datapoint can be added to an existing cluster, with a high inertia meaning it is more 'difficult' to reasonably add the datapoint to a cluster. With this in mind, we want the inertia to be relatively low so the clusters do identify the differences between datapoints. However, there is a point at which too many clusters will also not adequately represent the data since it will be visually hard to parse, and only a handful of datapoints that may be otherwise similar may be clustered into different groups. To find the balance between these two factors, we plot the elbow-curve at select the cluster number at which the inertia is low but stops decreasing as much between clusters thereafter.
+
+The elbow curve for our data looked like this:
+
+![Elbow curve](https://github.com/jonnybrammah/CryptoClustering/blob/main/Output/elbow_curve.png?raw=true)
+
+and so visually, it appears the optimal number of clusters seems to be around 4. 
+
+We can then use the KMeans method to cluster the data into four clusters, and plot two of the dimensions against each other to visualize this. The resulting graph looks like this:
+
+![Scatter Plot](https://github.com/jonnybrammah/CryptoClustering/blob/main/Output/market_scaled_data.png?raw=true)
+
+Two very distinct clusters stand out from this graph, blue and yellow. Looking at this in broad strokes, you can see that both clusters hover around zero percent price change in the previous 24 hours with roughly equal amounts either positive and negative, with the yellow cluster having had a positive price change in the previous week and the blue cluster having had a negative price change.
+
+Two other clusters exist, red and green, but each cluster only contains one data point.
+
+
 
 -----
 
