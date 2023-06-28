@@ -53,7 +53,11 @@ Two other clusters exist, red and green, but each cluster only contains one data
 
 ## Principal Component Analysis
 
-In order to optimize these clusters further, we used Principal Component Analysis (PCA) to reduce the dimensionality of the dataset, while containing as much of its information as possible.
+In order to optimize these clusters further, we used Principal Component Analysis (PCA) to reduce the dimensionality of the dataset, while containing as much of its information as possible. In this case, we reduced the dimensionality to three components, which still kept around 89.5% of the total variability in the original data.
+
+Repeating the same process as above to use KMeans modeling to cluster the data.
+
+![Elbow Curve PCA](https://raw.githubusercontent.com/jonnybrammah/CryptoClustering/main/Output/elbow_curve_pca.png)
 
 
 
